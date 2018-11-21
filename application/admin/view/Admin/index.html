@@ -1,0 +1,103 @@
+{extend name='Indexpublic:index'}
+{block name='body'}
+<!--仪表图-->
+<script src="__PUBLIC__admin/js/morris-chart/morris.js"></script>
+<script src="__PUBLIC__admin/js/morris-chart/raphael-min.js"></script>
+<div class="wrapper">
+	<div class="row">
+		<div class="col-md-6">
+			<!--statistics start-->
+			<div class="row state-overview">
+				<div class="col-md-6 col-xs-12 col-sm-6">
+					<div class="panel purple">
+						<div class="symbol">
+							<i class="fa fa-gavel"></i>
+						</div>
+						<div class="state-value">
+							<div class="value">{$admin_num}</div>
+							<div class="title">管理员总数</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6">
+					<div class="panel red">
+						<div class="symbol">
+							<i class="fa fa-tags"></i>
+						</div>
+						<div class="state-value">
+							<div class="value">{$notice_num}</div>
+							<div class="title">文章总数</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row state-overview">
+				<div class="col-md-6 col-xs-12 col-sm-6">
+					<div class="panel blue">
+						<div class="symbol">
+							<i class="fa fa-money"></i>
+						</div>
+						<div class="state-value">
+							<div class="value">{$admin_status_num}</div>
+							<div class="title">被禁管理员总数</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-6">
+					<div class="panel green">
+						<div class="symbol">
+							<i class="fa fa-eye"></i>
+						</div>
+						<div class="state-value">
+							<div class="value">{$notice_status_num}</div>
+							<div class="title">被禁文章总数</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--statistics end-->
+		</div>
+		<div class="col-md-6">
+			<!--more statistics box start-->
+			<div class="panel deep-purple-box">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-7 col-sm-7 col-xs-7">
+							<div id="graph-donut" class="revenue-graph"></div>
+
+						</div>
+						<div class="col-md-5 col-sm-5 col-xs-5">
+							<ul class="bar-legend">
+								<li><span class="green"></span> 无敌管理员:{$level[0]['num']}</li>
+								<li><span class="purple"></span> 一级管理员:{$level[1]['num']}</li>
+								<li><span class="blue"></span> 二级管理员:{$level[2]['num']}</li>
+								<li><span class="red"></span> 三级管理员:{$level[3]['num']}</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--more statistics box end-->
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    Morris.Donut({
+    element: 'graph-donut',
+    data: [
+        {value: "{$level[0]['num']}", label: "{$level[0]['title']}", formatted: "人数{$level[0]['num']}人" },
+        {value: "{$level[1]['num']}", label: "{$level[1]['title']}", formatted: "人数{$level[1]['num']}人" },
+        {value: "{$level[2]['num']}", label: "{$level[2]['title']}", formatted: "人数{$level[2]['num']}人" },
+        {value: "{$level[3]['num']}", label: "{$level[3]['title']}", formatted: "人数{$level[3]['num']}人" },
+    ],
+    backgroundColor: false,
+    labelColor: '#fff',
+    colors: [
+        '#4acacb','#6a8bc0','#5ab6df','#fe8676'
+    ],
+    formatter: function (x, data) { return data.formatted; }
+	});
+});
+</script>
+{/block}

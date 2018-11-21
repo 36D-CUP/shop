@@ -1,0 +1,247 @@
+{extend name='Indexpublic:index'}
+{block name='body'}
+<style>
+td a{
+  color:#fff !important;
+}
+td,th{
+  text-align: center !important;
+    vertical-align: middle !important;
+}
+.dataTables_info li{
+  cursor:pointer;
+}
+</style>
+<div class="row">
+    <div class="col-sm-12">
+        <section class="panel">
+            <header class="panel-heading">
+                {$title_txt}
+<!-- <span class="tools pull-right">
+<a href="javascript:;" class="fa fa-chevron-down"></a>收起
+<a href="javascript:;" class="fa fa-times"></a>关闭
+</span> -->
+</header>
+<div class="panel-body">
+    <div class="row">
+        <div class="col-lg-1" style = 'float:left'>
+            <select class="selectpicker form-control" id = 'data_num' style = 'width: 60px;padding:0px !important;cursor:pointer;float:left;margin-right: 10px;'>
+                <option value="10" {if condition="($data_num==10)"}selected{/if}>10</option>
+                <option value="15" {if condition="($data_num==15)"}selected{/if}>15</option>
+                <option value="20" {if condition="($data_num==20)"}selected{/if}>20</option>
+                <option value="x" {if condition="($data_num==x)"}selected{/if}>全部</option>
+            </select>
+            <p style = 'line-height: 35px;'>
+                条数
+            </p>
+        </div>
+        <div class="col-lg-2" style = 'float:left'>
+            <select class="selectpicker form-control" id = 'level' style = 'width: 130px;padding:0px !important;cursor:pointer;float:left;margin-right: 10px;'>
+                {volist name='level' id='levels'}
+                  <option value="{$levels.id}" {if condition="($levels.id==$new_level)"}selected{/if}>{$levels.title}</option>
+                {/volist}
+            </select>
+            <p style = 'line-height: 35px;'>
+                选择管理员等级
+            </p>
+        </div>
+        <!-- 添加功能 start -->
+        <button  class="btn btn-success layui-btn layui-btn-sm layui-btn-normal llbtn" data-toggle="modal" data-target="#myModal"  style ='margin-left: 12px;float:left'>添加新标签</button>
+      <!-- 添加功能 end -->
+        <div class="col-lg-3" style='float:right;margin-bottom: 10px;'>
+            <form action = '' method="get">
+                <div class="">
+                    <select class="selectpicker form-control" name = 'search_type' style = 'width: 90px;padding:0px !important;cursor:pointer;float: left'>
+                        <option value = 'id'           {if condition="($s_ty == 'id')"}          selected{/if}> 系统Id              </option>
+                        <option value = 'title'   {if condition="($s_ty == 'title')"}   selected{/if}> 功能名称             </option>
+                        <option value = 'cont'   {if condition="($s_ty == 'cont')"}   selected{/if}> 控制器             </option>
+                        <option value = 'fun'   {if condition="($s_ty == 'fun')"}   selected{/if}> 方法             </option>
+                    </select>
+                    <input type="text" name = 'search_value' value = '{$s_val}' class = 'form-control' style = 'width: 180px;float: left;margin:0 5px;'>
+                    <input type="hidden" value = '1' name = 'type'>
+                    <button class = 'btn btn-default' style = 'float: left'>查询</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="adv-table">
+        <table  class="display table table-bordered table-striped" id="dynamic-table">
+            <thead>
+                <tr>
+                    <th style = 'width:80px'>系统ID</th>
+                    <th style = 'width:80px'>选择</th>
+                    <th>功能名称(双击修改)</th>
+                    <th>所在控制器(双击修改)</th>
+                    <th>所在方法(双击修改)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {volist name='row' id='row'  empty='$empty'}
+                <tr class="gradeX">
+                    <td>{$row.id}</td>
+                    <td><input thisID='{$row.id}' type="checkbox" name = '{$row.id}' {if condition="(in_array($row['id'],$node))"}checked{/if}></td> 
+                    <td  class = 'double_updata_txt' tableName='title' thisID="{$row['id']}" clickTable = '{$table}' clickRes = '__URL__{$con}/double_updata_txt'>{$row.title}</td>
+                    <td  class = 'double_updata_txt' tableName='cont' thisID="{$row['id']}" clickTable = '{$table}' clickRes = '__URL__{$con}/double_updata_txt'>{$row.cont}</td>
+                    <td  class = 'double_updata_txt' tableName='fun' thisID="{$row['id']}" clickTable = '{$table}' clickRes = '__URL__{$con}/double_updata_txt'>{$row.fun}</td>
+
+                </tr>
+                {/volist}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th style = 'width:80px'>系统ID</th>
+                    <th style = 'width:80px'>选择</th>
+                    <th>功能名称(双击修改)</th>
+                    <th>所在控制器(双击修改)</th>
+                    <th>所在方法(双击修改)</th>
+                </tr>
+            </tfoot>
+        </table>
+        <!--分页-->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="dataTables_info" id="editable-sample_info">
+                    <div class="dataTables_paginate paging_bootstrap pagination" id = 'page'>
+
+                        <ul>
+                            <li><a  class="prev" name = '1'>← 第一页</a></li>
+                            {for start="$pros" end="$proe"}
+                            <li ><a  {if condition="($pro == $i)"} style = 'background: #65cea7;color:#fff'{/if} name = '{$i}'>{$i}</a></li>
+                            {/for}
+                            <li ><a class="next" name = '{$page}'>最后一页 → </a></li>
+                            <li style = 'height:32px;line-height: 32px;padding:0 10px; '>总页数:{$page}</li>
+                            <li style = 'height:32px;line-height: 32px;padding:0 10px; '>总条数:{$nums}</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--分页 end-->
+    </div>
+</div>
+
+ <!--模态框-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" id = 'form' aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <form enctype="multipart/form-data" action = '' id="upForm" method='post'>
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">
+                          添加权限功能
+                      </h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id = 'close'>
+                      </button>
+                  </div>
+                  <div class="modal-body" style = 'margin-bottom:30px;height:240px;'>
+
+                      <div class="form-group" style = ''>
+                          <label class="col-sm-3 col-sm-3 control-label " style ='margin-top: 5px;'><font style="vertical-align: inherit;">功能名称</font></label>
+                          <div class="col-sm-9">
+                              <input type="text" id="title" name = 'title' class="form-control tooltips myupdata"  data-trigger="hover" data-toggle="tooltip" title="" placeholder="请输入功能名称" verName='true' data-original-title="请输入功能名称" value = "">
+                          </div>
+                      </div>
+                      <div style = 'height:30px;'></div>
+                      <div class="form-group" style = ''>
+                          <label class="col-sm-3 col-sm-3 control-label " style ='margin-top: 5px;'><font style="vertical-align: inherit;">控制器</font></label>
+                          <div class="col-sm-9">
+                              <input type="text" id="cont" name = 'cont' class="form-control tooltips myupdata"  data-trigger="hover" data-toggle="tooltip" title="" placeholder="请输入控制器" verName='true' data-original-title="请输入控制器" value = "">
+                          </div>
+                      </div>
+                      <div style = 'height:30px;'></div>
+                      <div class="form-group" style = ''>
+                          <label class="col-sm-3 col-sm-3 control-label " style ='margin-top: 5px;'><font style="vertical-align: inherit;">方法</font></label>
+                          <div class="col-sm-9">
+                              <input type="text" id="fun" name = 'fun' class="form-control tooltips myupdata"  data-trigger="hover" data-toggle="tooltip" title="" placeholder="请输入方法" verName='true' data-original-title="请输入方法" value = "">
+                          </div>
+                      </div>
+                      <div style = 'height:30px;'></div>
+                      
+                  <div class="modal-footer">
+                      <button value="提交" type="button" id="mt_add" class = 'btn btn-success'>添加</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                      </button>
+                  </div>
+              </div>
+          </form>
+      </div>
+    <!-- 模态框 end -->
+
+
+
+</section>
+</div>
+</div>
+<script type="text/javascript">
+
+    // 分页
+    $("#page").on('click','li a',function(){
+      var pro = $(this).attr('name');
+      var search_type = "{$Request.param.search_type}";
+      var search_value = "{$Request.param.search_value}";
+      var data_num = "{$Request.param.data_num}";
+      var type = "{$Request.param.type}";         //通过自定义函数getUrlParam(key);获取地址栏的参数
+      var level = "{$Request.param.level}";       //当前权限
+      window.location.href = '__URL__{$con}/{$fun}?data_num='+data_num+'&pro='+pro+'&search_type='+search_type+'&search_value='+search_value+'&type='+type+'&level='+level;
+  });
+    //显示条数
+    $('#data_num').change(function(){
+      var search_type = "{$Request.param.search_type}";
+      var pro = "{$Request.param.pro}";
+      var search_value = "{$Request.param.search_value}";
+      var data_num = "{$Request.param.data_num}";
+      var type = "{$Request.param.type}";         //通过自定义函数getUrlParam(key);获取地址栏的参数
+      var level = "{$Request.param.level}";       //当前权限
+
+      window.location.href='__URL__{$con}/{$fun}?data_num='+$(this).val()+'&pro='+pro+'&search_type='+search_type+'&search_value='+search_value+'&type='+type+'&level='+level;
+  });
+
+//显示权限
+$('#level').change(function(){
+      var pro = "{$Request.param.pro}";
+      var search_type = "{$Request.param.search_type}";
+      var search_value = "{$Request.param.search_value}";
+      var data_num = "{$Request.param.data_num}";
+      var type = "{$Request.param.type}";         //通过自定义函数getUrlParam(key);获取地址栏的参数
+      var level = "{$Request.param.level}";       //当前权限
+
+       window.location.href='__URL__{$con}/{$fun}?data_num='+data_num+'&pro='+pro+'&search_type='+search_type+'&search_value='+search_value+'&type='+type+'&level='+$(this).val();
+});
+
+
+$('#mt_add').click(function(event) {
+　　//formdata储存异步上传数据
+     var formData = new FormData($('form')[0]);
+     var myupdata = $(this).parents('form').find('.myupdata');
+
+
+     for(var i = 0 ; i<myupdata.length ; i++){
+        formData.append(myupdata.eq(i).attr('name'),myupdata.eq(i).val());
+     }
+
+     //坑点: 无论怎么传数据,console.log(formData)都会显示为空,但其实值是存在的,f12查看Net tab可以看到数据被上传了
+     $.ajax({
+      url:'__URL__{$con}/{$fun}DoAdd',
+      type: 'POST',
+      data: formData,
+      //这两个设置项必填
+      contentType: false,
+      processData: false,
+      success:function(data){
+        alert(data);
+        location.reload();
+
+      }
+     })
+ });
+
+//打钩
+$('body').on('click','input[type="checkbox"]',function(){
+  var type = $(this).attr('checked')==undefined?'2':'1';    //undefined/2为点击取消沟,checked/1为点击打上勾
+  var id = $(this).attr('thisID');
+  var level = "{$new_level}";
+  $.post('__URL__{$con}/{$fun}con',{type:type,id:id,level:level},function(data){
+  });
+});
+</script>
+{/block}

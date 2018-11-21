@@ -1,0 +1,133 @@
+{extend name='Indexpublic:index'}
+{block name='body'}
+
+<link href="__PUBLIC__admin/css/fileinput.min.css" rel="stylesheet"><!-- 上传 -->
+<script src="__PUBLIC__admin/js/fileinput.min.js"></script><!-- 上传 -->
+<script type="text/javascript" src="__PUBLIC__wangEditor/release/wangEditor.min.js"></script><!-- 富文本编辑器 -->
+<style type="text/css">
+
+</style>
+<div class="row">
+    <section class="panel">
+        <header class="panel-heading" style = 'text-align: center;font-size:32px;height:100px;line-height: 80px;'>
+            {$title_txt}
+        </header>
+        <div class="panel-body">
+            <form class="form-horizontal adminex-form" method="get">
+
+                <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">主图(3兆内)</label>
+                    <div class="col-sm-10">
+                        {if condition="($img)"}<img style = 'width:200px;margin:10px' src = "{$img}">{/if}
+                        <input name = 'imgs[]' id="file-aa" type="file" class="file" data-overwrite-initial="false" ><!-- multiple  -->
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">标题</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control tooltips myupdata" name = 'title' data-trigger="hover" data-toggle="tooltip" title="" placeholder="标题" data-original-title="请输入标题" value="{$row['title']}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">简略</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control tooltips myupdata" name = 'brief' data-trigger="hover" data-toggle="tooltip" title="" placeholder="简略" data-original-title="请输入简略" value="{$row['brief']}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">内容</label>
+                    <div class="col-sm-10">
+                        <div id="editor">
+                            {$row['content']|raw}
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- 隐藏id -->
+                <input type="hidden" class = 'myupdata' name = 'id' value="{$row['id']}">
+                <div  style="height: 80px;">
+                    <button class = 'btn btn-success' type = 'button' id = 'valiSub' onclick= '' style = 'display:block;margin:0 auto;width: 120px;margin-top: 30px'>提交</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+<script type="text/javascript">
+$("#file-aa").fileinput({
+    allowedFileExtensions : ['jpg', 'png','gif'],
+    overwriteInitial: false,
+    showUpload:false,
+    maxFileSize: 3000,
+    showUpload:false, 
+    browseClass:"btn btn-success",
+    maxFilesNum: 1,
+
+    //allowedFileTypes: ['image', 'video', 'flash'],
+    slugCallback: function(filename) {
+        return filename.replace('(', '_').replace(']', '_');
+    }
+});
+
+$(document).ready(function(){
+    var outTradeNo="";  //随机号
+    for(var i=0;i<10;i++) //6位随机数，用以加在时间戳后面。
+    {
+        outTradeNo += Math.floor(Math.random()*10);
+    }
+    var myDate = new Date();
+
+    outTradeNo = '{$row.randimg}';
+
+    var E = window.wangEditor;
+    var editor = new E('#editor');
+
+    editor.customConfig.uploadImgShowBase64 = true ;//开启上传图片
+    editor.customConfig.uploadImgMaxSize = 3 * 1024 * 1024;//图片大小
+    editor.customConfig.uploadImgMaxLength = 100000;//图片上传的数量
+    editor.customConfig.uploadImgServer  = '__URL__publics/Htmlimg/table/{$table}/id/'+outTradeNo ;
+    editor.customConfig.debug = true
+
+    // 或者 var editor = new E( document.getElementById('editor') )
+    editor.create();
+
+    $('#valiSub').click(function(event) {
+        //formdata储存异步上传数据
+        var formData = new FormData($('form')[0]);
+        formData.append('imgs',$('#file-aa')[0].files);
+        //富文本
+        formData.append('content',editor.txt.html());
+        formData.append('randimg','{$row.randimg}');
+        var myupdata = $(this).parents('form').find('.myupdata');
+        for(var i = 0 ; i<myupdata.length ; i++){
+            formData.append(myupdata.eq(i).attr('name'),myupdata.eq(i).val());
+        }
+
+        //坑点: 无论怎么传数据,console.log(formData)都会显示为空,但其实值是存在的,f12查看Net tab可以看到数据被上传了
+        $.ajax({
+            url:'__URL__{$con}/{$fun}',
+            type: 'POST',
+            data: formData,
+            //这两个设置项必填
+            contentType: false,
+            processData: false,
+            success:function(data){
+                alert(data);
+                if(data == '添加成功'){
+                    if(confirm('是否继续添加?')){
+                        location.reload();
+                    }else{
+                        window.location.href = '__URL__{$con}/{$index}';
+                    }
+                }else{
+                    location.reload();
+                }
+            }
+        })
+    });
+});
+
+</script>
+{/block}

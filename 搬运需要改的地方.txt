@@ -1,0 +1,33 @@
+﻿搬运需要改的地方
+1.修改根目录名字
+
+2.进入config/database.php
+	修改
+			//服务器地址
+		    'hostname'        => '127.0.0.1',
+		    // 数据库名
+		    'database'        => 'lingtu',
+		    // 用户名
+		    'username'        => 'root',
+		    // 密码
+		    'password'        => '',
+
+3.进入config/template.php
+	修改
+	    '__PUBLIC__'    => '/lingtu/public/static/',
+        '__URL__'       => '/lingtu/public/'
+
+4.application/amdin/controller/Allow
+		public $dbt = 'lt_';								//表前缀
+		public $dbimg = 'lt_img';							//文件表
+		public $imgPath = '/lingtu/public/uploads/';		//普通上传的图片路径
+		public $url     = '/lingtu/public/';		//普通上传的图片路径
+		public $rootUrl = '/wamp64/www/lingtu/public/uploads/htmlimg/';	//根目录
+
+5.进入application/amdin/controller/login
+        替换所有lingtu与表前缀
+
+6.进入application/common.php
+	修改数据库前缀
+
+7.修改数据库表前缀

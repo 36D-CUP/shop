@@ -1,0 +1,2271 @@
+---------------------------------------------------------------
+[ 2018-09-29T13:21:46+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/index
+[运行时间：0.172010s] [吞吐率：5.81req/s] [内存消耗：5,500.63kb] [文件加载：71]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getindex',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\index.html [ array (
+  0 => 'notice_status_num',
+  1 => 'notice_num',
+  2 => 'admin_status_num',
+  3 => 'admin_num',
+  4 => 'level',
+  5 => 'title',
+  6 => 'title_txt',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_notice` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-29T13:21:46+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/morris.js
+[运行时间：0.077005s] [吞吐率：12.99req/s] [内存消耗：2,552.61kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:21:46+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/raphael-min.js
+[运行时间：0.077005s] [吞吐率：12.99req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:21:46+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/morris.js
+[运行时间：0.072004s] [吞吐率：13.89req/s] [内存消耗：2,552.68kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:21:46+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/raphael-min.js
+[运行时间：0.073004s] [吞吐率：13.70req/s] [内存消耗：2,552.71kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:21:48+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/myshopadmin/adminadd
+[运行时间：0.072004s] [吞吐率：13.89req/s] [内存消耗：2,552.61kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:21:53+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/index
+[运行时间：0.142008s] [吞吐率：7.04req/s] [内存消耗：5,217.66kb] [文件加载：69]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getindex',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\index.html [ array (
+  0 => 'notice_status_num',
+  1 => 'notice_num',
+  2 => 'admin_status_num',
+  3 => 'admin_num',
+  4 => 'level',
+  5 => 'title',
+  6 => 'title_txt',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_notice` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:00+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/index
+[运行时间：0.143008s] [吞吐率：6.99req/s] [内存消耗：5,218.09kb] [文件加载：69]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getindex',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\index.html [ array (
+  0 => 'notice_status_num',
+  1 => 'notice_num',
+  2 => 'admin_status_num',
+  3 => 'admin_num',
+  4 => 'level',
+  5 => 'title',
+  6 => 'title_txt',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_notice` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:00+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/morris.js
+[运行时间：0.080005s] [吞吐率：12.50req/s] [内存消耗：2,552.68kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:00+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/raphael-min.js
+[运行时间：0.077004s] [吞吐率：12.99req/s] [内存消耗：2,552.71kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:01+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/morris.js
+[运行时间：0.072004s] [吞吐率：13.89req/s] [内存消耗：2,552.68kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:01+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/raphael-min.js
+[运行时间：0.069004s] [吞吐率：14.49req/s] [内存消耗：2,552.71kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:02+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/myshopadmin/admin
+[运行时间：0.071004s] [吞吐率：14.08req/s] [内存消耗：2,552.57kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:28+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/myshopadmin/admin
+[运行时间：0.070004s] [吞吐率：14.28req/s] [内存消耗：2,552.54kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:30+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/index
+[运行时间：0.153009s] [吞吐率：6.54req/s] [内存消耗：5,500.13kb] [文件加载：71]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getindex',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\index.html [ array (
+  0 => 'notice_status_num',
+  1 => 'notice_num',
+  2 => 'admin_status_num',
+  3 => 'admin_num',
+  4 => 'level',
+  5 => 'title',
+  6 => 'title_txt',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_notice` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:31+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/index
+[运行时间：0.144008s] [吞吐率：6.94req/s] [内存消耗：5,218.09kb] [文件加载：69]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getindex',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\index.html [ array (
+  0 => 'notice_status_num',
+  1 => 'notice_num',
+  2 => 'admin_status_num',
+  3 => 'admin_num',
+  4 => 'level',
+  5 => 'title',
+  6 => 'title_txt',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_notice` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:31+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/morris.js
+[运行时间：0.077005s] [吞吐率：12.99req/s] [内存消耗：2,552.68kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:31+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/raphael-min.js
+[运行时间：0.075004s] [吞吐率：13.33req/s] [内存消耗：2,552.71kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:31+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/morris.js
+[运行时间：0.068004s] [吞吐率：14.71req/s] [内存消耗：2,552.68kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:31+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/morris-chart/raphael-min.js
+[运行时间：0.067004s] [吞吐率：14.92req/s] [内存消耗：2,552.71kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:32+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/adminadd
+[运行时间：0.166009s] [吞吐率：6.02req/s] [内存消耗：5,608.69kb] [文件加载：74]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/index',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.000000s ]
+[ error ] [8]未定义变量: data[F:\wamp64\www\lingtu\application\admin\controller\Index.php:169]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Index.php:170]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:33+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/fileinput.min.css
+[运行时间：0.075004s] [吞吐率：13.33req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:33+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/fileinput.min.js
+[运行时间：0.077004s] [吞吐率：12.99req/s] [内存消耗：2,552.67kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:22:33+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/adminadd
+[运行时间：0.138008s] [吞吐率：7.25req/s] [内存消耗：5,319.44kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.002000s ]
+[ error ] [8]未定义变量: data[F:\wamp64\www\lingtu\application\admin\controller\Index.php:169]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Index.php:170]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:34+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/admin
+[运行时间：0.172010s] [吞吐率：5.81req/s] [内存消耗：5,658.91kb] [文件加载：74]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/adminadd',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` LIMIT 0,10 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:34+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/admin
+[运行时间：0.149009s] [吞吐率：6.71req/s] [内存消耗：5,352.12kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:53+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/notice/notice
+[运行时间：0.171010s] [吞吐率：5.85req/s] [内存消耗：5,614.70kb] [文件加载：74]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'notice/<action>',
+  'route' => 'admin/Notice/getnotice',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Notice/',
+  ),
+  'var' => 
+  array (
+    'action' => 'notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'notice',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Notice\notice.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_notice` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_notice` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_notice' [ RunTime:0.002000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:278]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:54+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/notice/notice
+[运行时间：0.135008s] [吞吐率：7.41req/s] [内存消耗：5,317.89kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'notice/<action>',
+  'route' => 'admin/Notice/getnotice',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Notice/',
+  ),
+  'var' => 
+  array (
+    'action' => 'notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'notice',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Notice\notice.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_notice` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_notice` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_notice` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_notice' [ RunTime:0.002000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\aab193e7afa8193ca959af439d1b1b52.php:278]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:56+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/admin
+[运行时间：0.148009s] [吞吐率：6.76req/s] [内存消耗：5,353.04kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/notice/notice',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_admin' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:58+08:00 ] 127.0.0.1 POST 127.0.0.1/lingtu/public/admin/click_updata_status
+[运行时间：0.220012s] [吞吐率：4.55req/s] [内存消耗：5,185.30kb] [文件加载：68]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/postclick_updata_status',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'click_updata_status',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '36',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'val' => '2',
+  'key' => 'status',
+  'table' => 'lt_admin',
+  'action' => 'click_updata_status',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `lt_admin`  SET `status` = 2  WHERE  `id` = 1 [ RunTime:0.082005s ]
+---------------------------------------------------------------
+[ 2018-09-29T13:22:59+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/admin
+[运行时间：0.148009s] [吞吐率：6.76req/s] [内存消耗：5,352.88kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_admin' [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+---------------------------------------------------------------
+[ 2018-09-29T13:23:01+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/admin
+[运行时间：0.149008s] [吞吐率：6.71req/s] [内存消耗：5,352.88kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001001s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+---------------------------------------------------------------
+[ 2018-09-29T13:23:02+08:00 ] 127.0.0.1 POST 127.0.0.1/lingtu/public/admin/click_updata_status
+[运行时间：0.190011s] [吞吐率：5.26req/s] [内存消耗：5,185.30kb] [文件加载：68]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/postclick_updata_status',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'click_updata_status',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '36',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'val' => '1',
+  'key' => 'status',
+  'table' => 'lt_admin',
+  'action' => 'click_updata_status',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `lt_admin`  SET `status` = 1  WHERE  `id` = 1 [ RunTime:0.062004s ]
+---------------------------------------------------------------
+[ 2018-09-29T13:23:03+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/adminadd
+[运行时间：0.136008s] [吞吐率：7.35req/s] [内存消耗：5,320.05kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data[F:\wamp64\www\lingtu\application\admin\controller\Index.php:169]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Index.php:170]
+---------------------------------------------------------------
+[ 2018-09-29T13:23:03+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/fileinput.min.js
+[运行时间：0.073004s] [吞吐率：13.70req/s] [内存消耗：2,552.67kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:23:03+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/fileinput.min.css
+[运行时间：0.077004s] [吞吐率：12.99req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:23:16+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/notice/noticeadd
+[运行时间：0.155009s] [吞吐率：6.45req/s] [内存消耗：5,599.35kb] [文件加载：74]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'notice/<action>',
+  'route' => 'admin/Notice/getnoticeadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Notice/',
+  ),
+  'var' => 
+  array (
+    'action' => 'noticeadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/adminadd',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'noticeadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Notice\noticeadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002001s ]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Notice.php:118]
+[ error ] [8]未定义变量: level[F:\wamp64\www\lingtu\application\admin\controller\Notice.php:119]
+[ error ] [8]未定义数组索引: title[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:236]
+[ error ] [8]未定义数组索引: brief[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:242]
+[ error ] [8]未定义数组索引: content[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:249]
+[ error ] [8]未定义数组索引: id[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:257]
+---------------------------------------------------------------
+[ 2018-09-29T13:23:17+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/fileinput.min.css
+[运行时间：0.077004s] [吞吐率：12.99req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:23:17+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/fileinput.min.js
+[运行时间：0.073004s] [吞吐率：13.70req/s] [内存消耗：2,552.66kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:23:18+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/notice/noticeadd
+[运行时间：0.141008s] [吞吐率：7.09req/s] [内存消耗：5,309.31kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'notice/<action>',
+  'route' => 'admin/Notice/getnoticeadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Notice/',
+  ),
+  'var' => 
+  array (
+    'action' => 'noticeadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'noticeadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Notice\noticeadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Notice.php:118]
+[ error ] [8]未定义变量: level[F:\wamp64\www\lingtu\application\admin\controller\Notice.php:119]
+[ error ] [8]未定义数组索引: title[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:236]
+[ error ] [8]未定义数组索引: brief[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:242]
+[ error ] [8]未定义数组索引: content[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:249]
+[ error ] [8]未定义数组索引: id[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:257]
+---------------------------------------------------------------
+[ 2018-09-29T13:24:31+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/notice/noticeadd
+[运行时间：0.171010s] [吞吐率：5.85req/s] [内存消耗：5,599.29kb] [文件加载：74]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'notice/<action>',
+  'route' => 'admin/Notice/getnoticeadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Notice/',
+  ),
+  'var' => 
+  array (
+    'action' => 'noticeadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/adminadd',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'noticeadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Notice\noticeadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Notice.php:118]
+[ error ] [8]未定义变量: level[F:\wamp64\www\lingtu\application\admin\controller\Notice.php:119]
+[ error ] [8]未定义数组索引: title[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:236]
+[ error ] [8]未定义数组索引: brief[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:242]
+[ error ] [8]未定义数组索引: content[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:249]
+[ error ] [8]未定义数组索引: id[F:\wamp64\www\lingtu\runtime\temp\7068a40f05acabb5cb827c12a6ef07e9.php:257]
+---------------------------------------------------------------
+[ 2018-09-29T13:24:35+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/adminadd
+[运行时间：0.153009s] [吞吐率：6.54req/s] [内存消耗：5,608.87kb] [文件加载：74]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/notice/noticeadd',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.000000s ]
+[ error ] [8]未定义变量: data[F:\wamp64\www\lingtu\application\admin\controller\Index.php:169]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Index.php:170]
+---------------------------------------------------------------
+[ 2018-09-29T13:24:41+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/admin/img/loading.gif
+[运行时间：0.074004s] [吞吐率：13.51req/s] [内存消耗：2,552.73kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:25:46+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/adminadd
+[运行时间：0.141008s] [吞吐率：7.09req/s] [内存消耗：5,320.27kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/notice/noticeadd',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data[F:\wamp64\www\lingtu\application\admin\controller\Index.php:169]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Index.php:170]
+---------------------------------------------------------------
+[ 2018-09-29T13:25:48+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/adminadd
+[运行时间：0.131007s] [吞吐率：7.63req/s] [内存消耗：5,320.27kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/notice/noticeadd',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001001s ]
+[ error ] [8]未定义变量: data[F:\wamp64\www\lingtu\application\admin\controller\Index.php:169]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Index.php:170]
+---------------------------------------------------------------
+[ 2018-09-29T13:26:07+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/adminadd
+[运行时间：0.133007s] [吞吐率：7.52req/s] [内存消耗：5,320.27kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/notice/noticeadd',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data[F:\wamp64\www\lingtu\application\admin\controller\Index.php:169]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Index.php:170]
+---------------------------------------------------------------
+[ 2018-09-29T13:26:56+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/admin/img/loading.gif
+[运行时间：0.089005s] [吞吐率：11.24req/s] [内存消耗：2,552.73kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T13:27:06+08:00 ] 127.0.0.1 POST 127.0.0.1/lingtu/public/admin/AdminDoAdd
+[运行时间：0.390023s] [吞吐率：2.56req/s] [内存消耗：5,448.91kb] [文件加载：75]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/postAdminDoAdd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'AdminDoAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/adminadd',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'multipart/form-data; boundary=---------------------------3204227449631',
+  'content-length' => '39288',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'admin_user' => 'ceshi2',
+  'admin_pass' => 'ceshi2',
+  'admin_name' => '管理员2',
+  'level' => '1',
+  'id' => '',
+  'imgs' => '[object FileList]',
+  'action' => 'AdminDoAdd',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] INSERT INTO `lt_admin` (`admin_user` , `admin_name` , `level` , `admin_pass`) VALUES ('ceshi2' , '管理员2' , 1 , 'ceshi2') [ RunTime:0.201012s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lingtu.ms_img' doesn't exist[F:\wamp64\www\lingtu\thinkphp\library\think\db\Connection.php:699]
+---------------------------------------------------------------
+[ 2018-09-29T13:27:17+08:00 ] 127.0.0.1 POST 127.0.0.1/lingtu/public/admin/AdminDoAdd
+[运行时间：0.246014s] [吞吐率：4.06req/s] [内存消耗：5,449.00kb] [文件加载：75]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/postAdminDoAdd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'AdminDoAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/adminadd',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'multipart/form-data; boundary=---------------------------198842296319286',
+  'content-length' => '39312',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'admin_user' => 'ceshi2',
+  'admin_pass' => 'ceshi2',
+  'admin_name' => '管理员2',
+  'level' => '1',
+  'id' => '',
+  'imgs' => '[object FileList]',
+  'action' => 'AdminDoAdd',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] INSERT INTO `lt_admin` (`admin_user` , `admin_name` , `level` , `admin_pass`) VALUES ('ceshi2' , '管理员2' , 1 , 'ceshi2') [ RunTime:0.081005s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lingtu.ms_img' doesn't exist[F:\wamp64\www\lingtu\thinkphp\library\think\db\Connection.php:699]
+---------------------------------------------------------------
+[ 2018-09-29T13:28:11+08:00 ] 127.0.0.1 POST 127.0.0.1/lingtu/public/admin/AdminDoAdd
+[运行时间：0.448025s] [吞吐率：2.23req/s] [内存消耗：5,418.18kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/postAdminDoAdd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'AdminDoAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/adminadd',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'multipart/form-data; boundary=---------------------------22838234095281',
+  'content-length' => '39300',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'admin_user' => 'ceshi2',
+  'admin_pass' => 'ceshi2',
+  'admin_name' => '管理员2',
+  'level' => '1',
+  'id' => '',
+  'imgs' => '[object FileList]',
+  'action' => 'AdminDoAdd',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `lt_admin` (`admin_user` , `admin_name` , `level` , `admin_pass`) VALUES ('ceshi2' , '管理员2' , 1 , 'ceshi2') [ RunTime:0.080004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_admin'  AND `img_surface_id` = 29 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `lt_img` (`img_path` , `img_surface_name` , `img_surface_id`) VALUES ('20180929/8989c1a7fc440745b183b1688b7a73fe.png' , 'lt_admin' , 29) [ RunTime:0.095005s ]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\common.php:139]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\common.php:139]
+---------------------------------------------------------------
+[ 2018-09-29T13:28:14+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/adminadd
+[运行时间：0.139008s] [吞吐率：7.19req/s] [内存消耗：5,320.00kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/adminadd',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data[F:\wamp64\www\lingtu\application\admin\controller\Index.php:169]
+[ error ] [8]未定义变量: img[F:\wamp64\www\lingtu\application\admin\controller\Index.php:170]
+---------------------------------------------------------------
+[ 2018-09-29T13:28:16+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/admin
+[运行时间：0.159009s] [吞吐率：6.29req/s] [内存消耗：5,353.05kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/adminadd',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_admin' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+---------------------------------------------------------------
+[ 2018-09-29T13:28:21+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/admin?data_num=&pro=2&search_type=&search_value=&type=
+[运行时间：0.140008s] [吞吐率：7.14req/s] [内存消耗：5,340.36kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'data_num' => '',
+  'pro' => '2',
+  'search_type' => '',
+  'search_value' => '',
+  'type' => '',
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` LIMIT 10,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+---------------------------------------------------------------
+[ 2018-09-29T13:28:22+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/admin?data_num=&pro=2&search_type=&search_value=&type=
+[运行时间：0.149008s] [吞吐率：6.71req/s] [内存消耗：5,339.73kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=bjdba802avnk6scaq3qfi7nvo4',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'data_num' => '',
+  'pro' => '2',
+  'search_type' => '',
+  'search_value' => '',
+  'type' => '',
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=lingtu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_dis` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_dis` `R` INNER JOIN `lt_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lt_admin` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin` LIMIT 10,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_img` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_img` WHERE  `img_surface_name` = 'lt_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lt_admin_role` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `lt_admin_role` [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\lingtu\runtime\temp\3ac68691858ac2249d780d295055b26f.php:279]
+---------------------------------------------------------------
+[ 2018-09-29T14:11:39+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/admin/admin?data_num=&pro=2&search_type=&search_value=&type=
+[运行时间：0.102006s] [吞吐率：9.80req/s] [内存消耗：3,600.23kb] [文件加载：65]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'data_num' => '',
+  'pro' => '2',
+  'search_type' => '',
+  'search_value' => '',
+  'type' => '',
+  'action' => 'admin',
+)
+---------------------------------------------------------------
+[ 2018-09-29T14:11:39+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/login/login
+[运行时间：0.099005s] [吞吐率：10.10req/s] [内存消耗：3,832.01kb] [文件加载：67]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/getlogin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'cookie' => 'PHPSESSID=4jkhbh22rt0bi046bd944k22h2',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'login',
+)
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Login\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-29T14:11:40+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/style.css
+[运行时间：0.080005s] [吞吐率：12.50req/s] [内存消耗：2,552.71kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:40+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/style-responsive.css
+[运行时间：0.082005s] [吞吐率：12.19req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:40+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/jquery-1.10.2.min.js
+[运行时间：0.082004s] [吞吐率：12.19req/s] [内存消耗：2,552.72kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:40+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/bootstrap.min.js
+[运行时间：0.078004s] [吞吐率：12.82req/s] [内存消耗：2,552.67kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:40+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/modernizr.min.js
+[运行时间：0.078004s] [吞吐率：12.82req/s] [内存消耗：2,552.67kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:40+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/captcha.html
+[运行时间：0.082005s] [吞吐率：12.19req/s] [内存消耗：2,694.33kb] [文件加载：54]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/login/login',
+  'cookie' => 'PHPSESSID=4jkhbh22rt0bi046bd944k22h2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-09-29T14:11:42+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/login/login
+[运行时间：0.102006s] [吞吐率：9.80req/s] [内存消耗：3,579.91kb] [文件加载：65]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/getlogin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'cookie' => 'PHPSESSID=4jkhbh22rt0bi046bd944k22h2',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'login',
+)
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Login\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-29T14:11:42+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/jquery-1.10.2.min.js
+[运行时间：0.092005s] [吞吐率：10.87req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:42+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/bootstrap.min.js
+[运行时间：0.093005s] [吞吐率：10.75req/s] [内存消耗：2,552.63kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:42+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/style.css
+[运行时间：0.097005s] [吞吐率：10.31req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:42+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/style-responsive.css
+[运行时间：0.098005s] [吞吐率：10.20req/s] [内存消耗：2,552.69kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:42+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/modernizr.min.js
+[运行时间：0.090005s] [吞吐率：11.11req/s] [内存消耗：2,552.63kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:42+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/bootstrap.min.js
+[运行时间：0.076005s] [吞吐率：13.16req/s] [内存消耗：2,552.63kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:42+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/modernizr.min.js
+[运行时间：0.073004s] [吞吐率：13.70req/s] [内存消耗：2,552.63kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:43+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/captcha.html
+[运行时间：0.077005s] [吞吐率：12.99req/s] [内存消耗：2,694.80kb] [文件加载：54]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/login/login',
+  'cookie' => 'PHPSESSID=4jkhbh22rt0bi046bd944k22h2',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-09-29T14:11:49+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/login/login
+[运行时间：0.097005s] [吞吐率：10.31req/s] [内存消耗：3,579.91kb] [文件加载：65]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/getlogin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'cookie' => 'PHPSESSID=4jkhbh22rt0bi046bd944k22h2',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'login',
+)
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Login\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-29T14:11:49+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/style.css
+[运行时间：0.077004s] [吞吐率：12.99req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:49+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/style-responsive.css
+[运行时间：0.084004s] [吞吐率：11.90req/s] [内存消耗：2,552.69kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:49+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/jquery-1.10.2.min.js
+[运行时间：0.084005s] [吞吐率：11.90req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:49+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/bootstrap.min.js
+[运行时间：0.080004s] [吞吐率：12.50req/s] [内存消耗：2,552.63kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:49+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/modernizr.min.js
+[运行时间：0.075004s] [吞吐率：13.33req/s] [内存消耗：2,552.63kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:49+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/captcha.html
+[运行时间：0.076005s] [吞吐率：13.16req/s] [内存消耗：2,694.81kb] [文件加载：54]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/login/login',
+  'cookie' => 'PHPSESSID=4jkhbh22rt0bi046bd944k22h2',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-09-29T14:11:52+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/login/login
+[运行时间：0.098006s] [吞吐率：10.20req/s] [内存消耗：3,579.91kb] [文件加载：65]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/getlogin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'cookie' => 'PHPSESSID=4jkhbh22rt0bi046bd944k22h2',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'login',
+)
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Login\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-29T14:11:52+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/jquery-1.10.2.min.js
+[运行时间：0.096005s] [吞吐率：10.42req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:52+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/bootstrap.min.js
+[运行时间：0.096005s] [吞吐率：10.42req/s] [内存消耗：2,552.63kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:52+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/style.css
+[运行时间：0.104006s] [吞吐率：9.61req/s] [内存消耗：2,552.70kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:52+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/js/modernizr.min.js
+[运行时间：0.102006s] [吞吐率：9.80req/s] [内存消耗：2,552.63kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:52+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/static/myshop_admin/css/style-responsive.css
+[运行时间：0.104006s] [吞吐率：9.61req/s] [内存消耗：2,552.69kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-29T14:11:52+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/captcha.html
+[运行时间：0.074005s] [吞吐率：13.51req/s] [内存消耗：2,694.81kb] [文件加载：54]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/login/login',
+  'cookie' => 'PHPSESSID=4jkhbh22rt0bi046bd944k22h2',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-09-29T14:12:29+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/login/login
+[运行时间：0.107006s] [吞吐率：9.35req/s] [内存消耗：3,832.84kb] [文件加载：67]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/getlogin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/admin/admin',
+  'cookie' => 'PHPSESSID=4jkhbh22rt0bi046bd944k22h2',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'login',
+)
+[ info ] [ VIEW ] F:\wamp64\www\lingtu\application\admin\view\Login\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-29T14:12:32+08:00 ] 127.0.0.1 GET 127.0.0.1/lingtu/public/captcha.html
+[运行时间：0.075005s] [吞吐率：13.33req/s] [内存消耗：2,694.82kb] [文件加载：54]
+[ info ] [ LANG ] F:\wamp64\www\lingtu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/lingtu/public/login/login',
+  'cookie' => 'PHPSESSID=4jkhbh22rt0bi046bd944k22h2',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)

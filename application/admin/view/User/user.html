@@ -1,0 +1,155 @@
+{extend name='Indexpublic:index'}
+{block name='body'}
+<style>
+td a{
+  color:#fff !important;
+}
+td,th{
+  text-align: center !important;
+    vertical-align: middle !important;
+}
+.dataTables_info li{
+  cursor:pointer;
+}
+</style>
+<div class="row">
+    <div class="col-sm-12">
+        <section class="panel">
+            <header class="panel-heading">
+                {$title_txt}
+<!-- <span class="tools pull-right">
+<a href="javascript:;" class="fa fa-chevron-down"></a>收起
+<a href="javascript:;" class="fa fa-times"></a>关闭
+</span> -->
+</header>
+<div class="panel-body">
+    <div class="row">
+        <div class="col-lg-3" style = 'float:left'>
+            <select class="selectpicker form-control" id = 'data_num' style = 'width: 80px;padding:0px !important;cursor:pointer;float:left;margin-right: 10px;'>
+                <option value="10" {if condition="($data_num==10)"}selected{/if}>10</option>
+                <option value="15" {if condition="($data_num==15)"}selected{/if}>15</option>
+                <option value="20" {if condition="($data_num==20)"}selected{/if}>20</option>
+                <option value="x" {if condition="($data_num==x)"}selected{/if}>全部</option>
+            </select>
+            <p style = 'line-height: 35px;'>
+                显示条数
+            </p>
+        </div>
+        <div class="col-lg-3" style='float:right;margin-bottom: 10px;'>
+            <form action = '' method="get">
+                <div class="">
+                    <select class="selectpicker form-control" name = 'search_type' style = 'width: 90px;padding:0px !important;cursor:pointer;float: left'>
+                        <option value = 'id'           {if condition="($s_ty == 'id')"}          selected{/if}> 系统Id     					</option>
+                        <option value = 'wx_name'   {if condition="($s_ty == 'wx_name')"} 	selected{/if}> 微信名 						</option>
+                        <option value = 'phone'   {if condition="($s_ty == 'phone')"} 		selected{/if}> 手机号码  					</option>
+                        <option value = 'status'       {if condition="($s_ty == 'status')"} 	selected{/if}> 状态(1为正常,2为暂停)  </option>
+                        <option value = 'sex'        {if condition="($s_ty == 'sex')"}   selected{/if}> 性别(1为男,2为女)	</option>
+                    </select>
+                    <input type="text" name = 'search_value' value = '{$s_val}' class = 'form-control' style = 'width: 180px;float: left;margin:0 5px;'>
+                    <input type="hidden" value = '1' name = 'type'>
+                    <button class = 'btn btn-default' style = 'float: left'>查询</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="adv-table">
+        <table  class="display table table-bordered table-striped" id="dynamic-table">
+            <thead>
+                <tr>
+                    <th style = 'width:80px'>系统ID</th>
+                    <th style = 'width:50px'>微信头像</th>
+                    <th>微信名称</th>
+                    <th>性别</th>
+                    <th>手机</th>
+                    <th>创建时间</th>
+                    <th>最近访问时间</th>
+                    <th>称号</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {volist name='row' id='row'  empty='$empty'}
+                <tr class="gradeX">
+                    <td>{$row.id}</td>
+                    <td style = 'width:50px;'><img  style = 'width:35px;'src = "{$row['wx_img']}"></td> 
+                    <td>{$row.wx_name}</td>
+                    <td>{$row.sex}</td>
+                    <td>{$row.phone}</td>
+                    <td>{$row.found_time}</td>
+                    <td>{$row.visit_time}</td>
+                    <td>{$row.cid}</td>
+                    <td>
+                        <a href="#" class = "click_updata_status btn {if condition='($row.status==1)'}btn-success{else}btn-primary{/if} btn-sm" clickStatusKey ='status' thisID = "{$row['id']}" clickTable = '{$table}'  clickRes = '__URL__{$con}/click_updata_status' clickStatus="{$row['status']}" style ='color:#fff' clickq = '正常' clickj= '禁用'>
+                            {if condition="($row['status']==1)"}
+                                正常
+                            {else}
+                                禁用
+                            {/if}
+                        </a>
+                    </td>
+                    <td>
+                        <a  href="__URL__{$con}/{$fun}add/id/{$row['id']}"  class = 'btn btn-success btn-sm'>编辑</a>
+                        <a href="javascript:;" class = 'btn btn-warning btn-sm click_delete' thisID="{$row['id']}" clickRes = '__URL__{$con}/Click_delete' clickTable = '{$table}'>删除</a>
+                    </td>
+                </tr>
+                {/volist}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>系统ID</th>
+                    <th style = 'width:50px'>微信头像</th>
+                    <th>微信名称</th>
+                    <th>性别</th>
+                    <th>手机</th>
+                    <th>创建时间</th>
+                    <th>最近访问时间</th>
+                    <th>称号</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+            </tfoot>
+        </table>
+        <!--分页-->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="dataTables_info" id="editable-sample_info">
+                    <div class="dataTables_paginate paging_bootstrap pagination" id = 'page'>
+
+                        <ul>
+                            <li><a  class="prev" name = '1'>← 第一页</a></li>
+                            {for start="$pros" end="$proe"}
+                            <li ><a  {if condition="($pro == $i)"} style = 'background: #65cea7;color:#fff'{/if} name = '{$i}'>{$i}</a></li>
+                            {/for}
+                            <li ><a class="next" name = '{$page}'>最后一页 → </a></li>
+                            <li style = 'height:32px;line-height: 32px;padding:0 10px; '>总页数:{$page}</li>
+                            <li style = 'height:32px;line-height: 32px;padding:0 10px; '>总条数:{$nums}</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--分页 end-->
+    </div>
+
+</div>
+</section>
+</div>
+</div>
+<script type="text/javascript">
+    // 分页
+    $("#page").on('click','li a',function(){
+      var pro = $(this).attr('name');
+      var search_type = "{$Request.param.search_type}";
+      var search_value = "{$Request.param.search_value}";
+      var data_num = "{$Request.param.data_num}";
+      var type = "{$Request.param.type}";         //通过自定义函数getUrlParam(key);获取地址栏的参数
+      window.location.href = '__URL__{$con}/{$fun}?data_num='+data_num+'&pro='+pro+'&search_type='+search_type+'&search_value='+search_value+'&type='+type;
+  });
+    //显示条数
+    $('#data_num').change(function(){
+      window.location.href="__URL__{$con}/{$fun}/data_num/"+$(this).val();
+  });
+</script>
+{/block}

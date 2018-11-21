@@ -1,0 +1,1812 @@
+---------------------------------------------------------------
+[ 2018-11-21T16:34:58+08:00 ] ::1 GET localhost/shop/public/login/login
+[运行时间：0.098005s] [吞吐率：10.20req/s] [内存消耗：3,830.78kb] [文件加载：67]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/getlogin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'login',
+)
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Login\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-21T16:35:01+08:00 ] ::1 GET localhost/shop/public/login/login
+[运行时间：0.087005s] [吞吐率：11.49req/s] [内存消耗：3,577.58kb] [文件加载：65]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/getlogin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'login',
+)
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Login\login.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-11-21T16:35:01+08:00 ] ::1 GET localhost/shop/public/captcha.html
+[运行时间：0.134008s] [吞吐率：7.46req/s] [内存消耗：2,693.99kb] [文件加载：54]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-11-21T16:35:07+08:00 ] ::1 POST localhost/shop/public/login/check
+[运行时间：0.158009s] [吞吐率：6.33req/s] [内存消耗：5,307.34kb] [文件加载：76]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/postcheck',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'admin_user' => 'ljr',
+  'admin_pass' => 'admin',
+  'fcode' => '5npk',
+  'action' => 'check',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.ms_admin' doesn't exist[F:\wamp64\www\shop\thinkphp\library\think\db\Connection.php:699]
+---------------------------------------------------------------
+[ 2018-11-21T16:35:10+08:00 ] ::1 POST localhost/shop/public/login/check
+[运行时间：0.079005s] [吞吐率：12.66req/s] [内存消耗：3,579.62kb] [文件加载：66]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/postcheck',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'admin_user' => 'ljr',
+  'admin_pass' => 'admin',
+  'fcode' => '5npk',
+  'action' => 'check',
+)
+---------------------------------------------------------------
+[ 2018-11-21T16:35:10+08:00 ] ::1 GET localhost/shop/public/captcha.html?rand=0.8146062542768705
+[运行时间：0.056004s] [吞吐率：17.86req/s] [内存消耗：2,694.34kb] [文件加载：54]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'rand' => '0.8146062542768705',
+)
+---------------------------------------------------------------
+[ 2018-11-21T16:35:19+08:00 ] ::1 POST localhost/shop/public/login/check
+[运行时间：0.080004s] [吞吐率：12.50req/s] [内存消耗：3,580.43kb] [文件加载：66]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/postcheck',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'admin_user' => 'ljr',
+  'admin_pass' => 'admin',
+  'fcode' => '4gbm',
+  'action' => 'check',
+)
+---------------------------------------------------------------
+[ 2018-11-21T16:35:19+08:00 ] ::1 GET localhost/shop/public/captcha.html?rand=0.41612903796129797
+[运行时间：0.064004s] [吞吐率：15.62req/s] [内存消耗：2,694.20kb] [文件加载：54]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'rand' => '0.41612903796129797',
+)
+---------------------------------------------------------------
+[ 2018-11-21T16:35:28+08:00 ] ::1 POST localhost/shop/public/login/check
+[运行时间：0.129007s] [吞吐率：7.75req/s] [内存消耗：5,307.34kb] [文件加载：76]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/postcheck',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'admin_user' => 'ljr',
+  'admin_pass' => 'admin',
+  'fcode' => 'gb3h',
+  'action' => 'check',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.ms_admin' doesn't exist[F:\wamp64\www\shop\thinkphp\library\think\db\Connection.php:699]
+---------------------------------------------------------------
+[ 2018-11-21T16:37:44+08:00 ] ::1 POST localhost/shop/public/login/check
+[运行时间：0.080004s] [吞吐率：12.50req/s] [内存消耗：3,579.62kb] [文件加载：66]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/postcheck',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'admin_user' => 'ljr',
+  'admin_pass' => 'admin',
+  'fcode' => 'gb3h',
+  'action' => 'check',
+)
+---------------------------------------------------------------
+[ 2018-11-21T16:37:44+08:00 ] ::1 GET localhost/shop/public/captcha.html?rand=0.27270084455190347
+[运行时间：0.056004s] [吞吐率：17.86req/s] [内存消耗：2,694.20kb] [文件加载：54]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'rand' => '0.27270084455190347',
+)
+---------------------------------------------------------------
+[ 2018-11-21T16:37:49+08:00 ] ::1 POST localhost/shop/public/login/check
+[运行时间：0.200011s] [吞吐率：5.00req/s] [内存消耗：5,194.28kb] [文件加载：70]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'login/<action>',
+  'route' => 'admin/Login/postcheck',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Login/',
+  ),
+  'var' => 
+  array (
+    'action' => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'admin_user' => 'ljr',
+  'admin_pass' => 'admin',
+  'fcode' => 'gsrt',
+  'action' => 'check',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_user` = 'ljr'  AND `admin_pass` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `admin_user` = 'ljr'  AND `admin_pass` = '21232f297a57a5a743894a0e4a801fc3'  AND `status` = 1 LIMIT 1 [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin'  AND `img_surface_id` = 1 LIMIT 1 [ RunTime:0.013001s ]
+---------------------------------------------------------------
+[ 2018-11-21T16:37:49+08:00 ] ::1 GET localhost/shop/public/admin/index
+[运行时间：0.254014s] [吞吐率：3.94req/s] [内存消耗：5,499.73kb] [文件加载：71]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getindex',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/login/login',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\index.html [ array (
+  0 => 'notice_status_num',
+  1 => 'notice_num',
+  2 => 'admin_status_num',
+  3 => 'admin_num',
+  4 => 'level',
+  5 => 'title',
+  6 => 'title_txt',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_notice` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_notice` LIMIT 1 [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_notice` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.013001s ]
+---------------------------------------------------------------
+[ 2018-11-21T16:37:50+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:37:50+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.059004s] [吞吐率：16.95req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:37:51+08:00 ] ::1 GET localhost/shop/public/admin/index
+[运行时间：0.246014s] [吞吐率：4.06req/s] [内存消耗：5,216.98kb] [文件加载：69]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getindex',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\index.html [ array (
+  0 => 'notice_status_num',
+  1 => 'notice_num',
+  2 => 'admin_status_num',
+  3 => 'admin_num',
+  4 => 'level',
+  5 => 'title',
+  6 => 'title_txt',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_notice` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_notice` LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_notice` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.012001s ]
+---------------------------------------------------------------
+[ 2018-11-21T16:37:52+08:00 ] ::1 GET localhost/shop/public/admin/admin
+[运行时间：0.248015s] [吞吐率：4.03req/s] [内存消耗：5,657.36kb] [文件加载：74]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/admin/index',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin` LIMIT 1 [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` LIMIT 0,10 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.012000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+---------------------------------------------------------------
+[ 2018-11-21T16:37:53+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.067004s] [吞吐率：14.92req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:37:53+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180921/908886a77a885d435588b53c7ec394f4.png
+[运行时间：0.070004s] [吞吐率：14.28req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:37:53+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/7d54967b2b70e8a1240a1cc1cceafd62.png
+[运行时间：0.071004s] [吞吐率：14.08req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:37:53+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.070004s] [吞吐率：14.28req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:37:53+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/7d54967b2b70e8a1240a1cc1cceafd62.png
+[运行时间：0.071004s] [吞吐率：14.08req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:37:53+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180921/908886a77a885d435588b53c7ec394f4.png
+[运行时间：0.068004s] [吞吐率：14.71req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:37:53+08:00 ] ::1 GET localhost/shop/public/admin/admin
+[运行时间：0.249015s] [吞吐率：4.02req/s] [内存消耗：5,350.66kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin` LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` LIMIT 0,10 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin' [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.012001s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+---------------------------------------------------------------
+[ 2018-11-21T16:56:38+08:00 ] ::1 GET localhost/shop/public/notice/notice
+[运行时间：0.226013s] [吞吐率：4.42req/s] [内存消耗：5,593.96kb] [文件加载：74]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'notice/<action>',
+  'route' => 'admin/Notice/getnotice',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Notice/',
+  ),
+  'var' => 
+  array (
+    'action' => 'notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/admin/admin',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'notice',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Notice\notice.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_notice` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_notice` LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_notice` LIMIT 0,10 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_notice' [ RunTime:0.012000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\dee26ba3b83891c057e8874122cc4a4a.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\dee26ba3b83891c057e8874122cc4a4a.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\dee26ba3b83891c057e8874122cc4a4a.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\dee26ba3b83891c057e8874122cc4a4a.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\dee26ba3b83891c057e8874122cc4a4a.php:239]
+---------------------------------------------------------------
+[ 2018-11-21T16:56:38+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.053003s] [吞吐率：18.87req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:39+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:39+08:00 ] ::1 GET localhost/shop/public/notice/notice
+[运行时间：0.206012s] [吞吐率：4.85req/s] [内存消耗：5,298.55kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'notice/<action>',
+  'route' => 'admin/Notice/getnotice',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Notice/',
+  ),
+  'var' => 
+  array (
+    'action' => 'notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'notice',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Notice\notice.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_notice` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_notice` LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_notice` LIMIT 0,10 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_notice' [ RunTime:0.013000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\dee26ba3b83891c057e8874122cc4a4a.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\dee26ba3b83891c057e8874122cc4a4a.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\dee26ba3b83891c057e8874122cc4a4a.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\dee26ba3b83891c057e8874122cc4a4a.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\dee26ba3b83891c057e8874122cc4a4a.php:239]
+---------------------------------------------------------------
+[ 2018-11-21T16:56:44+08:00 ] ::1 GET localhost/shop/public/user/user
+[运行时间：0.196011s] [吞吐率：5.10req/s] [内存消耗：5,616.15kb] [文件加载：74]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'user/<action>',
+  'route' => 'admin/User/getuser',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/User/',
+  ),
+  'var' => 
+  array (
+    'action' => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/notice/notice',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'user',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\User\user.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_user` LIMIT 0,10 [ RunTime:0.012000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4c32e59f2aa89aedfb5ffa4e2becf8b5.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4c32e59f2aa89aedfb5ffa4e2becf8b5.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4c32e59f2aa89aedfb5ffa4e2becf8b5.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\4c32e59f2aa89aedfb5ffa4e2becf8b5.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4c32e59f2aa89aedfb5ffa4e2becf8b5.php:239]
+---------------------------------------------------------------
+[ 2018-11-21T16:56:44+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：2,552.31kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:44+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.054004s] [吞吐率：18.52req/s] [内存消耗：2,552.31kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:44+08:00 ] ::1 GET localhost/shop/public/user/user
+[运行时间：0.173010s] [吞吐率：5.78req/s] [内存消耗：5,316.73kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'user/<action>',
+  'route' => 'admin/User/getuser',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/User/',
+  ),
+  'var' => 
+  array (
+    'action' => 'user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'user',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\User\user.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_user` LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_user` LIMIT 0,10 [ RunTime:0.012001s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4c32e59f2aa89aedfb5ffa4e2becf8b5.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4c32e59f2aa89aedfb5ffa4e2becf8b5.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4c32e59f2aa89aedfb5ffa4e2becf8b5.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\4c32e59f2aa89aedfb5ffa4e2becf8b5.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4c32e59f2aa89aedfb5ffa4e2becf8b5.php:239]
+---------------------------------------------------------------
+[ 2018-11-21T16:56:48+08:00 ] ::1 GET localhost/shop/public/role/role
+[运行时间：0.200011s] [吞吐率：5.00req/s] [内存消耗：5,585.00kb] [文件加载：74]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'role/<action>',
+  'route' => 'admin/Role/getrole',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Role/',
+  ),
+  'var' => 
+  array (
+    'action' => 'role',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/user/user',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'role',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Role\role.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034002s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin_role` LIMIT 1 [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` LIMIT 0,10 [ RunTime:0.013001s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4a0e4f66cde11cfa9f62f6b17d0444cb.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4a0e4f66cde11cfa9f62f6b17d0444cb.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4a0e4f66cde11cfa9f62f6b17d0444cb.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\4a0e4f66cde11cfa9f62f6b17d0444cb.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4a0e4f66cde11cfa9f62f6b17d0444cb.php:239]
+---------------------------------------------------------------
+[ 2018-11-21T16:56:48+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:48+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:49+08:00 ] ::1 GET localhost/shop/public/role/role
+[运行时间：0.181011s] [吞吐率：5.52req/s] [内存消耗：5,283.62kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'role/<action>',
+  'route' => 'admin/Role/getrole',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Role/',
+  ),
+  'var' => 
+  array (
+    'action' => 'role',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'role',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Role\role.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin_role` LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` LIMIT 0,10 [ RunTime:0.014001s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4a0e4f66cde11cfa9f62f6b17d0444cb.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4a0e4f66cde11cfa9f62f6b17d0444cb.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4a0e4f66cde11cfa9f62f6b17d0444cb.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\4a0e4f66cde11cfa9f62f6b17d0444cb.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\4a0e4f66cde11cfa9f62f6b17d0444cb.php:239]
+---------------------------------------------------------------
+[ 2018-11-21T16:56:51+08:00 ] ::1 GET localhost/shop/public/admin/admin
+[运行时间：0.251014s] [吞吐率：3.98req/s] [内存消耗：5,351.22kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/role/role',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin` LIMIT 1 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` LIMIT 0,10 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.012001s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+---------------------------------------------------------------
+[ 2018-11-21T16:56:51+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:51+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/7d54967b2b70e8a1240a1cc1cceafd62.png
+[运行时间：0.062004s] [吞吐率：16.13req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:51+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180921/908886a77a885d435588b53c7ec394f4.png
+[运行时间：0.059003s] [吞吐率：16.95req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:51+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.058003s] [吞吐率：17.24req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:51+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/7d54967b2b70e8a1240a1cc1cceafd62.png
+[运行时间：0.060003s] [吞吐率：16.67req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:51+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180921/908886a77a885d435588b53c7ec394f4.png
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:52+08:00 ] ::1 GET localhost/shop/public/admin/admin
+[运行时间：0.231013s] [吞吐率：4.33req/s] [内存消耗：5,350.66kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin` LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` LIMIT 0,10 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.012001s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+---------------------------------------------------------------
+[ 2018-11-21T16:56:55+08:00 ] ::1 GET localhost/shop/public/admin/admin?data_num=&pro=2&search_type=&search_value=&type=
+[运行时间：0.247014s] [吞吐率：4.05req/s] [内存消耗：5,339.87kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/admin/admin',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'data_num' => '',
+  'pro' => '2',
+  'search_type' => '',
+  'search_value' => '',
+  'type' => '',
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin` LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` LIMIT 10,10 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.013001s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+---------------------------------------------------------------
+[ 2018-11-21T16:56:55+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：2,552.41kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:55+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180929/8989c1a7fc440745b183b1688b7a73fe.png
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：2,552.41kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:56+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.059004s] [吞吐率：16.95req/s] [内存消耗：2,552.41kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:56:56+08:00 ] ::1 GET localhost/shop/public/admin/admin?data_num=&pro=2&search_type=&search_value=&type=
+[运行时间：0.239014s] [吞吐率：4.18req/s] [内存消耗：5,339.70kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'data_num' => '',
+  'pro' => '2',
+  'search_type' => '',
+  'search_value' => '',
+  'type' => '',
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin` LIMIT 1 [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` LIMIT 10,10 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.013001s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+---------------------------------------------------------------
+[ 2018-11-21T16:57:13+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180929/8989c1a7fc440745b183b1688b7a73fe.png
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：2,552.37kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:57:47+08:00 ] ::1 GET localhost/shop/public/admin/admin?data_num=&pro=2&search_type=&search_value=&type=
+[运行时间：0.276016s] [吞吐率：3.62req/s] [内存消耗：5,339.87kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/admin/admin',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'data_num' => '',
+  'pro' => '2',
+  'search_type' => '',
+  'search_value' => '',
+  'type' => '',
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin` LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` LIMIT 10,10 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.012000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+---------------------------------------------------------------
+[ 2018-11-21T16:57:48+08:00 ] ::1 GET localhost/shop/public/admin/admin?data_num=&pro=2&search_type=&search_value=&type=
+[运行时间：0.246014s] [吞吐率：4.06req/s] [内存消耗：5,339.70kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadmin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'data_num' => '',
+  'pro' => '2',
+  'search_type' => '',
+  'search_value' => '',
+  'type' => '',
+  'action' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\admin.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'showNum',
+  4 => 'pro',
+  5 => 'row',
+  6 => 'title',
+  7 => 'title_txt',
+  8 => 'page',
+  9 => 'nums',
+  10 => 'pros',
+  11 => 'proe',
+  12 => 's_ty',
+  13 => 's_val',
+  14 => 'empty',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ms_admin` LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` LIMIT 10,10 [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.012000s ]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:236]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:237]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:238]
+[ error ] [8]Use of undefined constant x - assumed 'x'[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义变量: data_num[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:239]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+[ error ] [8]未定义数组索引: img[F:\wamp64\www\shop\runtime\temp\167942250d3be0bd3c4987f1f1f331b0.php:279]
+---------------------------------------------------------------
+[ 2018-11-21T16:57:50+08:00 ] ::1 GET localhost/shop/public/admin/adminadd/id/29
+[运行时间：0.253015s] [吞吐率：3.95req/s] [内存消耗：5,524.70kb] [文件加载：71]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+    'id' => '29',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/admin/admin?data_num=&pro=2&search_type=&search_value=&type=',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+  'id' => '29',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin'  AND `img_surface_id` = 29 LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.012001s ]
+---------------------------------------------------------------
+[ 2018-11-21T16:57:50+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.067004s] [吞吐率：14.92req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:57:50+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180929/8989c1a7fc440745b183b1688b7a73fe.png
+[运行时间：0.066004s] [吞吐率：15.15req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:57:50+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.066003s] [吞吐率：15.15req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:57:50+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180929/8989c1a7fc440745b183b1688b7a73fe.png
+[运行时间：0.064004s] [吞吐率：15.62req/s] [内存消耗：2,552.30kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:57:51+08:00 ] ::1 GET localhost/shop/public/admin/adminadd/id/29
+[运行时间：0.232013s] [吞吐率：4.31req/s] [内存消耗：5,235.34kb] [文件加载：69]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+    'id' => '29',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+  'id' => '29',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin'  AND `img_surface_id` = 29 LIMIT 1 [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.012001s ]
+---------------------------------------------------------------
+[ 2018-11-21T16:57:59+08:00 ] ::1 GET localhost/shop/public/static/admin/img/loading.gif
+[运行时间：0.064004s] [吞吐率：15.62req/s] [内存消耗：2,552.35kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:58:01+08:00 ] ::1 POST localhost/shop/public/admin/AdminDoAdd
+[运行时间：0.274015s] [吞吐率：3.65req/s] [内存消耗：5,421.51kb] [文件加载：72]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/postAdminDoAdd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'AdminDoAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/admin/adminadd/id/29',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'multipart/form-data; boundary=---------------------------18051122991401',
+  'content-length' => '17844',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+)
+[ info ] [ PARAM ] array (
+  'admin_user' => 'ceshi2',
+  'admin_pass' => '',
+  'admin_name' => '管理员2',
+  'level' => '1',
+  'id' => '29',
+  'imgs' => '[object FileList]',
+  'action' => 'AdminDoAdd',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020002s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `ms_admin`  SET `admin_user` = 'ceshi2' , `admin_name` = '管理员2' , `level` = 1  WHERE  `id` = 29 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin'  AND `img_surface_id` = 29 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] DELETE FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin'  AND `img_surface_id` = 29 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `ms_img` (`img_path` , `img_surface_name` , `img_surface_id`) VALUES ('20181121/e1dbac8cebf503d6e2062ffba1529345.jpg' , 'ms_admin' , 29) [ RunTime:0.012000s ]
+[ error ] [2]unlink(uploads/ms_admin/20180929/8989c1a7fc440745b183b1688b7a73fe.png): No such file or directory[F:\wamp64\www\shop\application\common.php:126]
+[ error ] [8]未定义变量: img[F:\wamp64\www\shop\application\common.php:139]
+[ error ] [8]未定义变量: img[F:\wamp64\www\shop\application\common.php:139]
+---------------------------------------------------------------
+[ 2018-11-21T16:58:02+08:00 ] ::1 GET localhost/shop/public/admin/adminadd/id/29
+[运行时间：0.230013s] [吞吐率：4.35req/s] [内存消耗：5,236.18kb] [文件加载：69]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+    'id' => '29',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/shop/public/admin/admin?data_num=&pro=2&search_type=&search_value=&type=',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+  'id' => '29',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin'  AND `img_surface_id` = 29 LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.013001s ]
+---------------------------------------------------------------
+[ 2018-11-21T16:58:02+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.063004s] [吞吐率：15.87req/s] [内存消耗：2,552.34kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:58:03+08:00 ] ::1 GET localhost/shop/public/uploads/ms_admin/20180920/6f30a5c2413eed7059b39cf3a47d046c.png
+[运行时间：0.063003s] [吞吐率：15.87req/s] [内存消耗：2,552.34kb] [文件加载：52]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-11-21T16:58:03+08:00 ] ::1 GET localhost/shop/public/admin/adminadd/id/29
+[运行时间：0.233014s] [吞吐率：4.29req/s] [内存消耗：5,235.67kb] [文件加载：69]
+[ info ] [ LANG ] F:\wamp64\www\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/<action>',
+  'route' => 'admin/Index/getadminadd',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'prefix' => 'admin/Index/',
+  ),
+  'var' => 
+  array (
+    'action' => 'adminadd',
+    'id' => '29',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=pm0c2okvhmgbcj7eo48bku6o42',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'adminadd',
+  'id' => '29',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp64\www\shop\application\admin\view\Admin\adminadd.html [ array (
+  0 => 'table',
+  1 => 'con',
+  2 => 'fun',
+  3 => 'index',
+  4 => 'title',
+  5 => 'title_txt',
+  6 => 'row',
+  7 => 'img',
+  8 => 'level',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=111.230.194.50;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_dis` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_dis` `R` INNER JOIN `ms_admin_node` `N` ON `R`.`nid`=`N`.`id` WHERE  `R`.`rid` = '1' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_img` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_img` WHERE  `img_surface_name` = 'ms_admin'  AND `img_surface_id` = 29 LIMIT 1 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ms_admin_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ms_admin_role` [ RunTime:0.012000s ]
